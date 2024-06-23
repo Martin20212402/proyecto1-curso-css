@@ -1,0 +1,58 @@
+/*stylo general se aplica a todas las paginas*/
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 255, 0));
+    padding: 0;
+    margin: 0;
+    padding-bottom: 100px;  /*le di mas altura asi el footer no lo tapa*/
+}
+
+header{
+    text-align: center;
+}
+
+.active{
+    background-color: rgb(255, 0, 255);
+}
+
+ul{
+    list-style-type: none; /*para que no aparezcan los puntitos*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*no aparezcan las barras de navegacion o scroll*/
+    background-color: #333;
+}
+
+li{
+    float: left; /*para que esten uno al lado del otro hacia la izquierda "home" "misiones" etc*/
+}
+
+li a{      /*a son los links dentro de la lista*/
+   display: block; /*ocupar todo el ancho que les permita*/
+   color: white;
+   text-align: center; 
+   padding: 15px; /*para tener espacio en le boton donde esta "Home"*/
+   text-decoration: none; /*para sacar el subrayado tipico del link*/
+}
+
+li a:hover:not(.active){                   /*no queremos que se aplique sobre el home*/
+    background-color: #111;
+}
+
+h1{
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    color:rgb(255, 0, 255);
+}
+
+footer{
+    background-color: #333; /*color de fondo negro*/
+    color: white;           /*color de la letra*/   
+    padding: 25px;           /*separacion del texto de los bordes de espacio que lo contiene*/
+    text-align: center;
+    position: fixed;          /*footer fijo abajo para cuando haces scroll quede fijo*/
+    bottom: 0;    
+    width: 100%;            /*ocupe todo el ancho*/
+}  
